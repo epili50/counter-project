@@ -3,7 +3,7 @@
 let counter = 0;
 
 let addClick = document.querySelector('.nextBtn')
-let counterNumber = document.querySelector('#counter');
+
 let lowerClick = document.querySelector('.prevBtn')
 
 addClick.onclick = function(){
@@ -21,6 +21,7 @@ lowerClick.onclick = function(){
 
 
 function updateCounter(counter){
+    let counterNumber = document.querySelector('#counter');
     if (counter == 0){
         counterNumber.style.color = 'black';
     }else if (counter > 0){
